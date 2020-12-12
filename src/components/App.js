@@ -2,6 +2,7 @@ import {connect} from 'react-redux';
 import fetchCatURL from '../api/fetchCatURL';
 import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 import ButtonSection from './ButtonSection';
 
 
@@ -21,7 +22,7 @@ class App extends Component {
         </video>
     }
     else if(this.props.image.includes(".webm")){
-      display = <video autoplay="autoplay">
+      display = <video autoplay="autoplay" loop>
         <source src={this.props.image} type="video/webm"/>
         Your browser does not support the video tag.
         </video>
@@ -35,6 +36,9 @@ class App extends Component {
           {display}
         </Grid>
         <Grid item xs={3}>
+          <Typography variant="h5" >
+          See a cute image of a dog, cat or a fox to cheer you up!
+          </Typography>
           <ButtonSection/>
         </Grid>
       </Grid>

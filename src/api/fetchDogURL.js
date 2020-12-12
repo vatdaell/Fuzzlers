@@ -13,4 +13,4 @@ const fetchCatURL = () => {
     }
 }
 
-export default fetchCatURL;;
+export default fetchCatURL;

@@ -1,4 +1,4 @@
-import {FETCH_CAT, FETCH_DOG} from '../actions';
+import { FETCH_CAT, FETCH_DOG, FETCH_FOX } from '../actions';
 
 const imageReducer  = (state = "", action) => {
     switch (action.type){
@@ -7,7 +7,10 @@ const imageReducer  = (state = "", action) => {
 
       case FETCH_DOG:
         return action.payload;
-        
+
+      case FETCH_FOX:
+            return action.payload;
+      
       default:
         return state
     }

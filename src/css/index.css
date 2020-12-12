@@ -24,3 +24,7 @@ video{
     width:50%; 
     height:auto;
 }
+
+button {
+    margin: 1em;
+}
